@@ -19,14 +19,22 @@ public class Emprestimo {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     private Long codigo;
+
     private LocalDateTime inicio;
+
     private LocalDateTime termino;
+
     private String locatario;
+
     private String cpf;
+
     private Double pagamento;
     private Double taxa;
     private LocalDateTime devolucao;
     @ManyToOne
     @JoinColumn(name = "carro")
     private Carro carro;
+
 }
+
+

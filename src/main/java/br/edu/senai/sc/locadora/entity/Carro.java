@@ -96,4 +96,8 @@ public class Carro {
     public String toString(){
         return "Carro{"+ "codigo="+ codigo +"modelo= "+ modelo+ "ano ="+ ano+"placa= "+placa+"cor= "+ cor +"preço= "+preco+ "categoria= "+categoria;
     }
+
 }
+
+
+

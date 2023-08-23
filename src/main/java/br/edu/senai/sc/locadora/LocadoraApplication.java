@@ -32,10 +32,9 @@ public class LocadoraApplication {
         List<Carro> lista = new ArrayList<>();
         lista = entityManager.createQuery("SELECT new Carro (c.codigo, c.modelo, c.ano, c.placa, c.cor, c.preco, c.categoria) from Carro c").getResultList();
 
-        for (Carro carro:lista){
+        for (Carro carro : lista) {
             System.out.println(carro);
         }
-
 
 
         // Realizar o commit da transação
